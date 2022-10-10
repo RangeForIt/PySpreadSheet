@@ -50,6 +50,8 @@ class GUI(Scheme):#класс интерфейса
         for i in range(len(self._type_lables)):
             self._type_lables[i].grid(column=i, row=0)
 
+        self.__for_bind__()
+
     def change_color(self, event):#метод смены цвета ентри
         event.widget['bg'] = self.from_rgb((215, 212, 219))
         try:
@@ -78,7 +80,8 @@ class GUI(Scheme):#класс интерфейса
         self._map.append(tmp)
 
         self.check_pos()
-        self.update_scrollbar()
+        self.root_f.update()
+        self.__for_bind__()
         return
 
 
@@ -94,6 +97,8 @@ class GUI(Scheme):#класс интерфейса
         self._rows -= 1
 
         self.check_pos()
+        self.root_f.update()
+        self.__for_bind__()
         return
     
     def delete_col(self):#удалить колонку

@@ -3,12 +3,15 @@ from tkinter import *
 from table_actions.table_handler import Handler
 from common.com import Scheme
 
-class GUI(Scheme):
+class GUI(Scheme):#для выовда селекта
     def __init__(self, db, result, command):
         super().__init__('Response', with_scroll=True)
         self._table = command.split()[-1]
         self._result = result
         self._handler = Handler(db, self._table)
+
+        self.root_f.update()
+        self.__for_bind__()
 
         self._rows = len(self._result)#кол-во строк
         self._cols = len(self._result[0])#кол-во колонок
@@ -25,7 +28,7 @@ class GUI(Scheme):
             self._type_lables.append(Label(self.root_f, text=self._types[i]))
             self._type_lables[-1].grid(column=i, row=0)
     
-    def main(self):
+    def main(self):#создание ентри
         for i in range(self._rows):
             line = []
             for j in range(self._cols):

@@ -13,7 +13,7 @@ class GUI(Scheme):
         self.primary()
         self.main()
     
-    def primary(self):
+    def primary(self):#создание виджетов
         self.save_state = IntVar()
 
         self.host = Entry(self.root_w, width=30)
@@ -32,14 +32,14 @@ class GUI(Scheme):
         self.save.grid(column=0, row=4)
         self.accept.grid(column=0, row=5)
 
-    def accepting(self):
+    def accepting(self):#переход на выбор таблицы
         if self.save_state.get() == 1:
             self.data = [self.host.get(), self.login.get(), self.psswd.get(), self.database.get()]
             self.save_usr()
 
         g(DataBase(self.host.get(), self.login.get(), self.psswd.get(), self.database.get()))
     
-    def pkl_oper(self):
+    def pkl_oper(self):#сохранение пользователя
         if path.exists('user\\user.pkl'):
             pass
         else:
@@ -67,6 +67,6 @@ class GUI(Scheme):
             dump(self.data, f)
     
     def main(self):
-        self.root_w.mainloop()
+        self.start()
 
 gui = GUI()
