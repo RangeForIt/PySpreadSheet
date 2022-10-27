@@ -1,9 +1,8 @@
 from tkinter import *
 from tkinter import messagebox
-from common.com import Scheme
 from table_actions.table_instance import GUI as g
 
-class GUI(Scheme):
+class GUI():
 
     def __init__(self, db, db_name):
         self.db = db
@@ -23,21 +22,14 @@ class GUI(Scheme):
         
         elif data_scheme[0] == 'drop':
             if messagebox.askokcancel("Вы уверены?", 'Вы собираетесь что то удалить. Вы уверены?'):
-                super().__init__('Response')
-                ret = self.db.make_command(command + ';', True)
-                message = Label(self.root_w, text=ret)
-                message.grid(column=0, row=0)
+                messagebox.showinfo('Выход', str(self.db.make_command(command + ';', False)))
 
             else:
                 return 0
         
         else:
-            super().__init__('Response')
-            ret = self.db.make_command(command + ';', True)
-            message = Label(self.root, text=ret)
-            message.grid(column=0, row=0)
+            messagebox.showinfo('Выход', str(self.db.make_command(command + ';', False)))
     
-
         obj.update()
 
         pass

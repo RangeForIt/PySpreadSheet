@@ -10,9 +10,6 @@ class GUI(Scheme):#для выовда селекта
         self._result = result
         self._handler = Handler(db, self._table)
 
-        self.root_f.update()
-        self.__for_bind__()
-
         self._rows = len(self._result)#кол-во строк
         self._cols = len(self._result[0])#кол-во колонок
 
@@ -37,5 +34,8 @@ class GUI(Scheme):#для выовда селекта
                 line[-1].insert(0, self._result[i][j])
                 line[-1].configure(state='readonly')
             self._map.append(line)
+        
+        self.cnv.update()
+        self.__for_bind__()
         
         self.start()

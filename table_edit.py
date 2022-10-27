@@ -50,8 +50,6 @@ class GUI(Scheme):#класс интерфейса
         for i in range(len(self._type_lables)):
             self._type_lables[i].grid(column=i, row=0)
 
-        self.__for_bind__()
-
     def change_color(self, event):#метод смены цвета ентри
         event.widget['bg'] = self.from_rgb((215, 212, 219))
         try:
@@ -80,7 +78,6 @@ class GUI(Scheme):#класс интерфейса
         self._map.append(tmp)
 
         self.check_pos()
-        self.root_f.update()
         self.__for_bind__()
         return
 
@@ -97,7 +94,6 @@ class GUI(Scheme):#класс интерфейса
         self._rows -= 1
 
         self.check_pos()
-        self.root_f.update()
         self.__for_bind__()
         return
     
@@ -142,14 +138,21 @@ class GUI(Scheme):#класс интерфейса
         return result
 
     def save(self):#функция сохранения
-        cols = self.db.make_command(f"SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{self.table}'", False)
+        cols = self.db.make_command(f"SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{self.table}';", False)
         
         self.table_handler.save(self, self.get_data(), cols)
+
+    def go_to_ref(self, table, db, event):
+        print(str(event) + '|' +  str(db) + '|' + str(table))
+        GUI(db, table)
 
     def main(self):#главная функция
         self.table_handler.load(self)
 
         if self._cols < len(self._type_lables):
             self._cols = len(self._type_lables)
+
+        self.cnv.update()
+        self.__for_bind__()
 
         self.start()

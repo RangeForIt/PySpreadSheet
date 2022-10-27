@@ -26,7 +26,7 @@ class Scheme:#родительский класс
         if with_scroll:  
             self.cnv = Canvas(self.root_w)
             self.scrollbar = Scrollbar(self.root_w, command=self.cnv.yview)
-
+             
             self.__for_bind__()
             self.cnv.configure(yscrollcommand=self.scrollbar.set)
 

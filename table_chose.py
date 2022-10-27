@@ -18,8 +18,10 @@ class GUI(Scheme):
 
         self.widgets = []
 
-        self.show_ex()
+        self.stop = False
+
         self.primary()
+        self.show_ex()
         self.main()
     
     def primary(self):
@@ -28,6 +30,7 @@ class GUI(Scheme):
         if cols == 1:
             lab = Label(self.root_w, text='Bad Request From MySQL: Check User Data')
             lab.grid(column=0, row=0)
+            self.stop = True
             return 1
         
         for g in range(len(cols)):
@@ -57,16 +60,20 @@ class GUI(Scheme):
             el.destroy()
     
     def show_ex(self):
-        self.command = Entry(self.root_w, width=35)
-        self.accept = Button(self.root_w, text='Выполнить', command=self.execute)
-        self.tables_mark = Label(self.root_w, text='Таблицы')
+        if not self.stop:
 
-        self.command.grid(column=0, row=0)
-        self.accept.grid(column=1, row=0)
-        self.tables_mark.grid(column=0, row=2)
-    
-        self._Add.add_command(label='Добавить таблицу', command=self.add_new)
-        self.tools.add_cascade(label="Добавить", menu=self._Add)
+            self.command = Entry(self.root_w, width=35)
+            self.accept = Button(self.root_w, text='Выполнить', command=self.execute)
+            self.tables_mark = Label(self.root_w, text='Таблицы')
+            self.update_b = Button(self.root_w, text="Обновить", command=self.update)
+
+            self.command.grid(column=0, row=0)
+            self.accept.grid(column=1, row=0)
+            self.tables_mark.grid(column=0, row=1)
+            self.update_b.grid(column=1, row=1)
+        
+            self._Add.add_command(label='Добавить таблицу', command=self.add_new)
+            self.tools.add_cascade(label="Добавить", menu=self._Add)
 
     def execute(self):
         gi(self.db, self.db.db).main(self.command.get(), self)
