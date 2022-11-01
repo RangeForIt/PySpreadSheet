@@ -14,13 +14,11 @@ class GUI():
         pass
     
     def main(self, command, obj):
-        data_scheme = command.split(' ')
-
-        if data_scheme[0] == 'select':
+        if command.startwith('select'):
             g(self.db, self.db.make_command(command + ';', False), command)
             return 0
         
-        elif data_scheme[0] == 'drop':
+        elif command.startwith('drop'):
             if messagebox.askokcancel("Вы уверены?", 'Вы собираетесь что то удалить. Вы уверены?'):
                 messagebox.showinfo('Выход', str(self.db.make_command(command + ';', False)))
 

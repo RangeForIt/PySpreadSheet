@@ -1,8 +1,8 @@
 from os import path
 from tkinter import *
+from pickle import dump, load
 
 from common.dbOperations import DataBase
-from pickle import dump, load
 from table_chose import GUI as g
 from common.com import Scheme
 
@@ -14,7 +14,7 @@ class GUI(Scheme):
         self.main()
     
     def primary(self):#создание виджетов
-        self.save_state = IntVar()
+        self.save_state = BooleanVar()
 
         self.host = Entry(self.root_w, width=30)
         self.database = Entry(self.root_w, width=30)
@@ -33,7 +33,7 @@ class GUI(Scheme):
         self.accept.grid(column=0, row=5)
 
     def accepting(self):#переход на выбор таблицы
-        if self.save_state.get() == 1:
+        if self.save_state.get() == True:
             self.data = [self.host.get(), self.login.get(), self.psswd.get(), self.database.get()]
             self.save_usr()
 
@@ -61,6 +61,8 @@ class GUI(Scheme):
                 self.database.insert(0, data[3])
                 self.login.insert(0, data[1])
                 self.psswd.insert(0, data[2])
+
+                self.save_state.set(True)
     
     def save_usr(self):
         with open('user\\user.pkl', 'wb') as f:

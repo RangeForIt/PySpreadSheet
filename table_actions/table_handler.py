@@ -1,6 +1,7 @@
 from functools import partial
 from tkinter import Entry
 from mysql.connector import DatabaseError
+from idlelib.tooltip import Hovertip
 from tkinter import messagebox as mb
 
 class Handler():#класс хендлера таблиц
@@ -144,7 +145,8 @@ class Handler():#класс хендлера таблиц
                 line.append(Entry(window.root_f, width=6))
                 line[-1].bind('<Button-1>', window.change_color)
                 if data[j][16] == 'MUL':
-                    line[-1].bind('<Button-3>', partial(window.go_to_ref, data_add[0][1], self.db))
+                    line[-1].bind('<Button-3>', partial(window.go_to_ref, data_add[j - 1][1], self.db))
+                    Hovertip(line[-1], 'Нажмите ПКМ')
 
                 line[-1].insert(0, table[i][j])
             window._map.append(line)
@@ -182,9 +184,7 @@ class Handler():#класс хендлера таблиц
         if DatabaseError in type(exp).__bases__:
             mb.showerror('Ошибка', f'Произошла ошибка!\n{exp}')
             return 1
-        
-
-        
+    
         else:
             return 0 
     

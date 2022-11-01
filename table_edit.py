@@ -46,10 +46,10 @@ class GUI(Scheme):#класс интерфейса
     def primary(self):#для лейблов
         for i in range(len(self._types)):
             self._type_lables.append(Label(self.root_f, text=str(self._types[i][0]).upper()))
-
+        
         for i in range(len(self._type_lables)):
             self._type_lables[i].grid(column=i, row=0)
-
+            
     def change_color(self, event):#метод смены цвета ентри
         event.widget['bg'] = self.from_rgb((215, 212, 219))
         try:
@@ -143,7 +143,7 @@ class GUI(Scheme):#класс интерфейса
         self.table_handler.save(self, self.get_data(), cols)
 
     def go_to_ref(self, table, db, event):
-        print(str(event) + '|' +  str(db) + '|' + str(table))
+        print(table)
         GUI(db, table)
 
     def main(self):#главная функция

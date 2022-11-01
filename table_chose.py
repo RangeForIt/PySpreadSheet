@@ -1,8 +1,10 @@
 from tkinter import *
+from functools import partial
+
 from table_edit import GUI as g
 from execute_command import GUI as gi
 from common.com import Scheme
-from functools import partial
+from table_create import GUI as gu
 
 class GUI(Scheme):
     def __init__(self, db):
@@ -26,11 +28,8 @@ class GUI(Scheme):
     
     def primary(self):
         cols = self.db.make_command(f'show tables from {self.db.db};', False)
-
-        if cols == 1:
-            lab = Label(self.root_w, text='Bad Request From MySQL: Check User Data')
-            lab.grid(column=0, row=0)
-            self.stop = True
+        if type(cols) == int:
+            Label(self.root_w, text='Неверные пользовательские данные!').grid(column=0, row=3)
             return 1
         
         for g in range(len(cols)):
@@ -47,7 +46,7 @@ class GUI(Scheme):
         g(self.db, col)
     
     def add_new(self):
-        pass
+        gu(self.db)
 
     def update(self):
         self.clean()

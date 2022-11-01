@@ -1,5 +1,9 @@
-from tkinter import Entry, Tk
+from time import sleep
 
-a = Entry(Tk())
 
-print(a.config())
+a = open('common/logs.log', 'a')
+
+while True:
+    sleep(0.000015)
+    a.write('aaa')
+    print('test')
