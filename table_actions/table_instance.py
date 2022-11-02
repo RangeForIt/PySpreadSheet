@@ -4,7 +4,10 @@ from table_actions.table_handler import Handler
 from common.com import Scheme
 
 class GUI(Scheme):#для выовда селекта
+
+    #инициализация
     def __init__(self, db, result, command):
+        #главное
         super().__init__('Response', with_scroll=True)
         self._table = command.split()[-1]
         self._result = result
@@ -20,15 +23,15 @@ class GUI(Scheme):#для выовда селекта
         self.primary()
         self.main()
     
-    def primary(self):
+    def primary(self):#выставление лейблов типов
         for i in range(len(self._types)):
             self._type_lables.append(Label(self.root_f, text=self._types[i]))
             self._type_lables[-1].grid(column=i, row=0)
     
     def main(self):#создание ентри
-        for i in range(self._rows):
+        for i in range(self._rows):#строки
             line = []
-            for j in range(self._cols):
+            for j in range(self._cols):#колонки
                 line.append(Entry(self.root_f, width=6))
                 line[-1].grid(column=j, row=i+1)
                 line[-1].insert(0, self._result[i][j])
@@ -38,4 +41,4 @@ class GUI(Scheme):#для выовда селекта
         self.cnv.update()
         self.__for_bind__()
         
-        self.start()
+        self.start()#старт(oh shit, here we go again)

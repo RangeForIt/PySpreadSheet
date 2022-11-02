@@ -2,28 +2,30 @@ from tkinter import *
     
 class Scheme:#родительский класс
     def __init__(self, title="Window", maxs=(500, 500), mins=(250, 250), with_menu=False, with_scroll=False):#аргументы-параметры окна
-        self.root_w = Tk()#создание и конфигурация окна
+        self.root_w = Tk()#создание окна
 
+        #конфигурация окна
         self.root_w.title(title)
         self.root_w.minsize(mins[0], mins[1])
         self.root_w.maxsize(maxs[0], maxs[1])
 
+        #проверка булевых аргументов
         self.__checkargs__(with_menu,  with_scroll)
         
+        #если надо но не надо
         self._cols = 0
         self._rows = 0
-
         self._map = []
     
-    def __for_bind__(self):
+    def __for_bind__(self):#установка границ скроллбара
         self.cnv.configure(scrollregion=self.cnv.bbox('all'))#для скроллбара
     
     def __checkargs__(self, with_menu, with_scroll):#проверка аргументов на тру и фолз
-        if with_menu:
+        if with_menu:#если надо меню сверху
             self.tools = Menu(self.root_w)
             self.root_w.configure(menu = self.tools)
         
-        if with_scroll:  
+        if with_scroll:#если надо скроллбар
             self.cnv = Canvas(self.root_w)
             self.scrollbar = Scrollbar(self.root_w, command=self.cnv.yview)
              
@@ -37,10 +39,10 @@ class Scheme:#родительский класс
             self.cnv.grid(column=0, row=0, sticky=N+S+W)
             self.scrollbar.grid(column=1, row=0, sticky=N+S+W)
     
-    def primary(self):#не для инита, но нужно
+    def primary(self):#не для инита, но надо
         pass
     
-    def start(self):#еще старт
+    def start(self):#старт
         self.root_w.mainloop()
     
     def from_rgb(self, rgb):#для цветов

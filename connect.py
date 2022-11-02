@@ -7,6 +7,8 @@ from table_chose import GUI as g
 from common.com import Scheme
 
 class GUI(Scheme):
+
+    #инициализация и все такое
     def __init__(self):
         super().__init__('Connect', (250, 500), (185, 125), False, False)
 
@@ -64,11 +66,11 @@ class GUI(Scheme):
 
                 self.save_state.set(True)
     
-    def save_usr(self):
+    def save_usr(self):#сохранение юзера
         with open('user\\user.pkl', 'wb') as f:
             dump(self.data, f)
     
     def main(self):
-        self.start()
+        self.start()#старт(и вот опять)
 
 gui = GUI()

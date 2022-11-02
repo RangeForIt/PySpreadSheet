@@ -78,13 +78,14 @@ class Handler():#класс хендлера таблиц
             for j in range(len(data[i])):
                 flag = False
 
-                if (cols_data[j][7] == 'varchar' or cols_data[j][7] == 'text') and not self.type_check(data[i][j], str):
+                #проверка на ошибки
+                if (cols_data[j][7] == 'varchar' or cols_data[j][7] == 'text') and not self.type_check(data[i][j], str):#проверка на стр
                     mb.showerror('Ошибка', f'Неверный тип данных!')
                     obj._map[i][j]['bg'] = 'red'
                     obj._map[i][j]['activebackground'] = 'red'
                     flag = True
 
-                if (cols_data[j][7] == 'tinyint' or cols_data[j][7] == 'int') and not self.type_check(data[i][j], int):
+                if (cols_data[j][7] == 'tinyint' or cols_data[j][7] == 'int') and not self.type_check(data[i][j], int):#проверка на инт
                     mb.showerror('Ошибка', f'Неверный тип данных!')
                     obj._map[i][j]['bg'] = 'red'
                     obj._map[i][j]['activebackground'] = 'red'
@@ -95,6 +96,7 @@ class Handler():#класс хендлера таблиц
 
                 border = len(data[i]) - 1
                 
+                #добавление значений в запрос
                 if cols_data[j][7] == 'varchar' or cols_data[j][7] == 'text':
 
                     if j == border:
@@ -166,7 +168,6 @@ class Handler():#класс хендлера таблиц
 
     def override_table(self, ct_query, iv_querys):#метод перезаписи таблицы
         self.test_for_error(self.db.make_command(f"drop table {self.table};", True))
-        #print(ct_query, iv_querys)
 
         if self.test_for_error(self.db.make_command(ct_query, True)):
             return 1
@@ -180,7 +181,7 @@ class Handler():#класс хендлера таблиц
         mb.showinfo("Успешно", "Таблица успешно сохранена!")
         return 0
     
-    def test_for_error(self, exp):
+    def test_for_error(self, exp):#проверка на ошибку
         if DatabaseError in type(exp).__bases__:
             mb.showerror('Ошибка', f'Произошла ошибка!\n{exp}')
             return 1
@@ -188,12 +189,11 @@ class Handler():#класс хендлера таблиц
         else:
             return 0 
     
-    def create_foreign(self, data):
-        #print(data)
+    def create_foreign(self, data):#создание части с фореигн кей(сложна очень(нет(наверное)))
         result_tmp = 'foreign key ('
         result = result_tmp
         for i in range(len(data)):
-            for el in data:
+            for el in data:#имена колонок в этой табице
                 if el[1] == data[i][1]:
                     try:
                         if data[i + 1][1] == el[1]:
@@ -210,7 +210,7 @@ class Handler():#класс хендлера таблиц
                     continue
 
             result += f') references {data[i][1]} ('
-            for el in data:
+            for el in data:#именя колонок в другой таблице
                 if el[1] == data[i][1]:
                     try:
                         if data[i + 1][1] == el[1]:
@@ -226,7 +226,7 @@ class Handler():#класс хендлера таблиц
                 else:
                     continue
             
-            if data[i] != data[-1]:
+            if data[i] != data[-1]:#есть ли еще?
                 result += '), '
                 result += result_tmp
             

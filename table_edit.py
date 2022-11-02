@@ -44,10 +44,10 @@ class GUI(Scheme):#класс интерфейса
         return 0
     
     def primary(self):#для лейблов
-        for i in range(len(self._types)):
+        for i in range(len(self._types)):#выставление лейблов
             self._type_lables.append(Label(self.root_f, text=str(self._types[i][0]).upper()))
         
-        for i in range(len(self._type_lables)):
+        for i in range(len(self._type_lables)):#позиционирование лейблов
             self._type_lables[i].grid(column=i, row=0)
             
     def change_color(self, event):#метод смены цвета ентри
@@ -58,13 +58,7 @@ class GUI(Scheme):#класс интерфейса
             pass
 
     def insert_col(self):#добавить колонку
-        for row in self._map:
-            row.append(Entry(self.root_f, width=6))
-        self._cols += 1
-
-        self.check_pos()
-
-        return
+        return 0
 
     def insert_row(self):#добавить строку
         tmp = []
@@ -79,13 +73,13 @@ class GUI(Scheme):#класс интерфейса
 
         self.check_pos()
         self.__for_bind__()
-        return
+        return 0
 
 
     def delete_row(self):#удалить строку
         if self._rows <= 1:
             mb.showerror('Ошибка', 'Должна быть хотя бы одна строка!')
-            return
+            return 0
 
         for i in range(self._cols):
             self._map[-1][i].destroy()
@@ -95,24 +89,10 @@ class GUI(Scheme):#класс интерфейса
 
         self.check_pos()
         self.__for_bind__()
-        return
+        return 0
     
     def delete_col(self):#удалить колонку
-        if self._cols <= 1:
-            mb.showerror('Ошибка', 'Должна быть хотя бы одна колонка!')
-            return
-
-        for i in range(self._rows):
-            self._map[i][-1].destroy()
-            self._map[i].pop(-1)
-
-        self._type_lables[-1].destroy()
-        self._type_lables.pop(-1)
-
-        self._cols -= 1
-
-        self.check_pos()
-        return
+        return 0
     
     def clean(self):#очистить виджеты
         for i in range(self._rows):
@@ -125,9 +105,9 @@ class GUI(Scheme):#класс интерфейса
     
     def get_data(self):#полуить значения ентри в двумерный массив
         result = []
-        for i in range(len(self._map)):
+        for i in range(len(self._map)):#строка
             cols = []
-            for j in range(len(self._map[i])):
+            for j in range(len(self._map[i])):#колонка
                 try:
                     cols.append(int(self._map[i][j].get()))
                 except ValueError:
@@ -142,17 +122,16 @@ class GUI(Scheme):#класс интерфейса
         
         self.table_handler.save(self, self.get_data(), cols)
 
-    def go_to_ref(self, table, db, event):
-        print(table)
+    def go_to_ref(self, table, db, event):#для перехода по фореигн кей
         GUI(db, table)
 
     def main(self):#главная функция
-        self.table_handler.load(self)
+        self.table_handler.load(self)#загрузка таблицы
 
-        if self._cols < len(self._type_lables):
+        if self._cols < len(self._type_lables):#проверка кол-ва колонок
             self._cols = len(self._type_lables)
 
         self.cnv.update()
         self.__for_bind__()
 
-        self.start()
+        self.start()#старт(целых четыре)
