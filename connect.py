@@ -45,7 +45,7 @@ class GUI(Scheme):
         if path.exists('user\\user.pkl'):
             pass
         else:
-            self.data = []
+            #self.data = []
             self.save_usr()
 
         with open('user\\user.pkl', 'rb') as f:

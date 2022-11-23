@@ -10,11 +10,11 @@ class GUI():
         self.name = db_name
     
     def main(self, command, obj):
-        if command.startwith('select'):#если начинается с селект
+        if command.startswith('select'):#если начинается с селект
             g(self.db, self.db.make_command(command + ';', False), command)
             return 0
         
-        elif command.startwith('drop'):#если начинается с дроп
+        elif command.startswith('drop'):#если начинается с дроп
             if messagebox.askokcancel("Вы уверены?", 'Вы собираетесь что то удалить. Вы уверены?'):
                 messagebox.showinfo('Выход', str(self.db.make_command(command + ';', False)))
 

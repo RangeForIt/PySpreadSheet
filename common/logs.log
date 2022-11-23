@@ -1,0 +1,72 @@
+
+
+DataBase:2022-11-03 20:14:02.440047:Program Start Here
+DataBase:2022-11-03 20:14:02.464981:Connection is OK.
+DataBase:2022-11-03 20:14:02.464981:Complite login for user root at host localhost.
+DataBase:2022-11-03 20:14:02.530804:Cursor for command is OK.
+DataBase:2022-11-03 20:14:02.532800:Command 'show tables from test;' completed with is_change = False.
+DataBase:2022-11-03 20:14:13.519800:Cursor for command is OK.
+DataBase:2022-11-03 20:14:13.519800:Command 'select * from food_v2;' completed with is_change = False.
+DataBase:2022-11-03 20:14:13.573656:Cursor for command is OK.
+DataBase:2022-11-03 20:14:13.575652:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "food_v2";' completed with is_change = False.
+
+
+DataBase:2022-11-03 20:30:57.696240:Program Start Here
+DataBase:2022-11-03 20:30:57.727157:Connection is OK.
+DataBase:2022-11-03 20:30:57.727157:Complite login for user root at host localhost.
+DataBase:2022-11-03 20:30:57.786997:Cursor for command is OK.
+DataBase:2022-11-03 20:30:57.789991:Command 'show tables from test;' completed with is_change = False.
+DataBase:2022-11-03 20:31:06.527030:Cursor for command is OK.
+DataBase:2022-11-03 20:31:06.528030:Command 'select * from food_v2;' completed with is_change = False.
+DataBase:2022-11-03 20:31:06.587393:Cursor for command is OK.
+DataBase:2022-11-03 20:31:06.589388:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "food_v2";' completed with is_change = False.
+
+
+DataBase:2022-11-17 21:16:12.572968:Program Start Here
+DataBase:2022-11-17 21:16:12.596906:Connection is OK.
+DataBase:2022-11-17 21:16:12.596906:Complite login for user root at host localhost.
+DataBase:2022-11-17 21:16:12.664307:Cursor for command is OK.
+DataBase:2022-11-17 21:16:12.675275:Command 'show tables from test;' completed with is_change = False.
+DataBase:2022-11-17 21:16:15.833387:Cursor for command is OK.
+DataBase:2022-11-17 21:16:15.834416:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust";' completed with is_change = False.
+DataBase:2022-11-17 21:16:15.835382:Cursor for command is OK.
+DataBase:2022-11-17 21:16:15.835382:Command 'select * from cust;' completed with is_change = False.
+DataBase:2022-11-17 21:16:15.835382:Cursor for command is OK.
+DataBase:2022-11-17 21:16:15.836410:Command 'select * from information_schema.columns where table_name = "cust";' completed with is_change = False.
+DataBase:2022-11-17 21:16:15.837376:Cursor for command is OK.
+DataBase:2022-11-17 21:16:15.887296:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "cust";' completed with is_change = False.
+
+
+DataBase:2022-11-23 23:31:21.468774:Program Start Here
+DataBase:2022-11-23 23:31:21.510664:Connection is OK.
+DataBase:2022-11-23 23:31:21.510664:Complite login for user root at host localhost.
+DataBase:2022-11-23 23:31:21.602416:Cursor for command is OK.
+DataBase:2022-11-23 23:31:21.613387:Command 'show tables from test;' completed with is_change = False.
+DataBase:2022-11-23 23:31:25.082733:Cursor for command is OK.
+DataBase:2022-11-23 23:31:25.084728:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust22";' completed with is_change = False.
+DataBase:2022-11-23 23:31:25.085727:Cursor for command is OK.
+DataBase:2022-11-23 23:31:25.085727:Command 'select * from cust22;' completed with is_change = False.
+DataBase:2022-11-23 23:31:25.085727:Cursor for command is OK.
+DataBase:2022-11-23 23:31:25.087720:Command 'select * from information_schema.columns where table_name = "cust22";' completed with is_change = False.
+DataBase:2022-11-23 23:31:25.087720:Cursor for command is OK.
+DataBase:2022-11-23 23:31:25.101682:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "cust22";' completed with is_change = False.
+DataBase:2022-11-23 23:31:34.703358:Cursor for command is OK.
+DataBase:2022-11-23 23:31:34.705352:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust22';' completed with is_change = False.
+DataBase:2022-11-23 23:31:34.705352:Cursor for command is OK.
+DataBase:2022-11-23 23:31:34.714329:Command 'drop table cust22;' completed with is_change = True.
+DataBase:2022-11-23 23:31:34.714329:Cursor for command is OK.
+DataBase:2022-11-23 23:31:34.726299:Command 'create table cust22(name text , age int );' completed with is_change = True.
+DataBase:2022-11-23 23:31:34.726299:Cursor for command is OK.
+DataBase:2022-11-23 23:31:34.728295:Command 'insert into cust22(name, age) values("das", 23);' completed with is_change = True.
+DataBase:2022-11-23 23:31:34.728295:Cursor for command is OK.
+DataBase:2022-11-23 23:31:34.729290:Command 'insert into cust22(name, age) values("sad", 32);' completed with is_change = True.
+DataBase:2022-11-23 23:31:34.729290:Cursor for command is OK.
+DataBase:2022-11-23 23:31:34.730288:Command 'insert into cust22(name, age) values("aa", 222);' completed with is_change = True.
+DataBase:2022-11-23 23:31:34.730288:Cursor for command is OK.
+DataBase:2022-11-23 23:31:34.732281:Command 'insert into cust22(name, age) values("aa", 222);' completed with is_change = True.
+DataBase:2022-11-23 23:31:34.732281:Cursor for command is OK.
+DataBase:2022-11-23 23:31:34.733278:Command 'insert into cust22(name, age) values("ss", 123);' completed with is_change = True.
+DataBase:2022-11-23 23:31:34.733278:Cursor for command is OK.
+DataBase:2022-11-23 23:31:34.734278:Command 'insert into cust22(name, age) values("dda", 321);' completed with is_change = True.
+DataBase:2022-11-23 23:31:42.114319:Cursor for command is OK.
+DataBase:2022-11-23 23:31:42.115315:Command 'show tables from test;' completed with is_change = False.
