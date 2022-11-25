@@ -1,0 +1,282 @@
+
+
+DataBase:2022-11-12 00:41:17.372856:Program Start Here
+DataBase:2022-11-12 00:41:17.626002:Connection is OK.
+DataBase:2022-11-12 00:41:17.626002:Complite login for user root at host localhost.
+
+
+DataBase:2022-11-12 00:47:41.452577:Program Start Here
+DataBase:2022-11-12 00:47:41.481499:Connection is OK.
+DataBase:2022-11-12 00:47:41.481499:Complite login for user root at host localhost.
+
+
+DataBase:2022-11-12 16:44:28.449488:Program Start Here
+DataBase:2022-11-12 16:44:28.486389:Connection is OK.
+DataBase:2022-11-12 16:44:28.486389:Complite login for user root at host localhost.
+DataBase:2022-11-12 16:44:28.487386:Cursor for command is OK.
+DataBase:2022-11-12 16:44:28.489380:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-11-14 19:18:33.397605:Program Start Here
+DataBase:2022-11-14 19:18:33.572957:Connection is OK.
+DataBase:2022-11-14 19:18:33.572957:Complite login for user root at host localhost.
+DataBase:2022-11-14 19:18:33.573954:Cursor for command is OK.
+DataBase:2022-11-14 19:18:33.629804:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-11-15 16:25:30.357971:Program Start Here
+DataBase:2022-11-15 16:25:30.385897:Connection is OK.
+DataBase:2022-11-15 16:25:30.385897:Complite login for user root at host localhost.
+DataBase:2022-11-15 16:25:30.387423:Cursor for command is OK.
+DataBase:2022-11-15 16:25:30.390396:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-11-17 20:34:59.848309:Program Start Here
+DataBase:2022-11-17 20:35:00.030820:Connection is OK.
+DataBase:2022-11-17 20:35:00.030820:Complite login for user root at host localhost.
+DataBase:2022-11-17 20:35:00.480780:Cursor for command is OK.
+DataBase:2022-11-17 20:35:00.541624:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-17 20:35:04.790191:Cursor for command is OK.
+DataBase:2022-11-17 20:35:04.802159:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust';' completed with is_change = False.
+
+
+DataBase:2022-11-17 20:37:15.455390:Program Start Here
+DataBase:2022-11-17 20:37:15.477331:Connection is OK.
+DataBase:2022-11-17 20:37:15.477331:Complite login for user root at host localhost.
+DataBase:2022-11-17 20:37:15.943273:Cursor for command is OK.
+DataBase:2022-11-17 20:37:15.947263:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-17 20:37:17.942993:Cursor for command is OK.
+DataBase:2022-11-17 20:37:17.944987:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust';' completed with is_change = False.
+DataBase:2022-11-17 20:37:17.944987:Cursor for command is OK.
+DataBase:2022-11-17 20:37:17.944987:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust";' completed with is_change = False.
+DataBase:2022-11-17 20:37:17.945984:Cursor for command is OK.
+DataBase:2022-11-17 20:37:17.946982:Command 'select * from cust;' completed with is_change = False.
+DataBase:2022-11-17 20:37:24.322074:Cursor for command is OK.
+DataBase:2022-11-17 20:37:24.324074:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-17 20:37:25.438958:Cursor for command is OK.
+DataBase:2022-11-17 20:37:25.439956:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust4';' completed with is_change = False.
+DataBase:2022-11-17 20:37:25.440955:Cursor for command is OK.
+DataBase:2022-11-17 20:37:25.441951:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust4";' completed with is_change = False.
+DataBase:2022-11-17 20:37:25.441951:Cursor for command is OK.
+DataBase:2022-11-17 20:37:25.459903:Command 'select * from cust4;' completed with is_change = False.
+
+
+DataBase:2022-11-17 20:53:13.264846:Program Start Here
+DataBase:2022-11-17 20:53:13.289779:Connection is OK.
+DataBase:2022-11-17 20:53:13.289779:Complite login for user root at host localhost.
+DataBase:2022-11-17 20:53:13.807950:Cursor for command is OK.
+DataBase:2022-11-17 20:53:13.810941:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-11-17 20:53:20.600190:Program Start Here
+DataBase:2022-11-17 20:53:20.607174:Connection is OK.
+DataBase:2022-11-17 20:53:20.607174:Complite login for user root at host localhost.
+DataBase:2022-11-17 20:53:21.102221:Cursor for command is OK.
+DataBase:2022-11-17 20:53:21.104215:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-11-17 20:53:22.823967:Program Start Here
+DataBase:2022-11-17 20:53:22.830949:Connection is OK.
+DataBase:2022-11-17 20:53:22.830949:Complite login for user root at host localhost.
+DataBase:2022-11-17 20:53:23.379277:Cursor for command is OK.
+DataBase:2022-11-17 20:53:23.381271:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-11-17 20:53:26.312158:Program Start Here
+DataBase:2022-11-17 20:53:26.317144:Connection is OK.
+DataBase:2022-11-17 20:53:26.317144:Complite login for user root at host localhost.
+DataBase:2022-11-17 20:53:26.844034:Cursor for command is OK.
+DataBase:2022-11-17 20:53:26.846028:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-11-18 16:00:43.089640:Program Start Here
+DataBase:2022-11-18 16:00:43.240242:Connection is OK.
+DataBase:2022-11-18 16:00:43.240242:Complite login for user root at host localhost.
+DataBase:2022-11-18 16:00:43.677074:Cursor for command is OK.
+DataBase:2022-11-18 16:00:43.726940:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-18 16:00:44.935244:Cursor for command is OK.
+DataBase:2022-11-18 16:00:44.948210:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust';' completed with is_change = False.
+DataBase:2022-11-18 16:00:44.948210:Cursor for command is OK.
+DataBase:2022-11-18 16:00:44.949208:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust";' completed with is_change = False.
+DataBase:2022-11-18 16:00:45.385042:Cursor for command is OK.
+DataBase:2022-11-18 16:00:45.394017:Command 'select * from cust;' completed with is_change = False.
+
+
+DataBase:2022-11-18 22:42:51.223146:Program Start Here
+DataBase:2022-11-18 22:42:51.247081:Connection is OK.
+DataBase:2022-11-18 22:42:51.247081:Complite login for user root at host localhost.
+DataBase:2022-11-18 22:42:51.679443:Cursor for command is OK.
+DataBase:2022-11-18 22:42:51.681438:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-18 22:42:52.533541:Cursor for command is OK.
+DataBase:2022-11-18 22:42:52.536534:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust';' completed with is_change = False.
+DataBase:2022-11-18 22:42:52.536534:Cursor for command is OK.
+DataBase:2022-11-18 22:42:52.537530:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust";' completed with is_change = False.
+DataBase:2022-11-18 22:42:53.017768:Cursor for command is OK.
+DataBase:2022-11-18 22:42:53.017768:Command 'select * from cust;' completed with is_change = False.
+DataBase:2022-11-18 22:42:54.837920:Cursor for command is OK.
+DataBase:2022-11-18 22:42:54.848890:Command 'drop table cust;' completed with is_change = True.
+DataBase:2022-11-18 22:42:54.848890:Cursor for command is OK.
+DataBase:2022-11-18 22:42:54.860859:Command 'create table cust(id int primary key auto_increment , name varchar(30) );' completed with is_change = True.
+DataBase:2022-11-18 22:42:54.860859:Cursor for command is OK.
+DataBase:2022-11-18 22:42:54.865845:Command 'insert into cust(name) values("dasadsad");' completed with is_change = True.
+DataBase:2022-11-18 22:42:54.865845:Cursor for command is OK.
+DataBase:2022-11-18 22:42:54.867840:Command 'insert into cust(name) values("saddsa");' completed with is_change = True.
+DataBase:2022-11-18 22:42:54.867840:Cursor for command is OK.
+DataBase:2022-11-18 22:42:54.869835:Command 'insert into cust(name) values("sadsadsad");' completed with is_change = True.
+
+
+DataBase:2022-11-19 00:06:49.972596:Program Start Here
+DataBase:2022-11-19 00:06:49.996533:Connection is OK.
+DataBase:2022-11-19 00:06:49.996533:Complite login for user root at host localhost.
+DataBase:2022-11-19 00:06:50.526371:Cursor for command is OK.
+DataBase:2022-11-19 00:06:50.529362:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-19 00:07:02.475806:Cursor for command is OK.
+DataBase:2022-11-19 00:07:02.487776:Command 'drop table cust11;' completed with is_change = True.
+DataBase:2022-11-19 00:07:02.489768:Cursor for command is OK.
+DataBase:2022-11-19 00:07:02.490765:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-19 00:09:24.331660:Cursor for command is OK.
+DataBase:2022-11-19 00:09:24.333656:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-19 00:09:32.186902:Cursor for command is OK.
+DataBase:2022-11-19 00:09:32.193883:Command 'drop table cust12;' completed with is_change = True.
+DataBase:2022-11-19 00:09:32.195878:Cursor for command is OK.
+DataBase:2022-11-19 00:09:32.197872:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-19 00:12:13.204042:Cursor for command is OK.
+DataBase:2022-11-19 00:12:13.206037:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-19 00:12:21.841430:Cursor for command is OK.
+DataBase:2022-11-19 00:12:21.849407:Command 'drop table cust13;' completed with is_change = True.
+
+
+DataBase:2022-11-19 00:40:21.404733:Program Start Here
+DataBase:2022-11-19 00:40:21.431662:Connection is OK.
+DataBase:2022-11-19 00:40:21.431662:Complite login for user root at host localhost.
+DataBase:2022-11-19 00:40:21.982272:Cursor for command is OK.
+DataBase:2022-11-19 00:40:21.985264:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-19 00:40:29.234342:Cursor for command is OK.
+DataBase:2022-11-19 00:40:29.236340:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust';' completed with is_change = False.
+DataBase:2022-11-19 00:40:29.237334:Cursor for command is OK.
+DataBase:2022-11-19 00:40:29.238332:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust";' completed with is_change = False.
+DataBase:2022-11-19 00:40:29.790566:Cursor for command is OK.
+DataBase:2022-11-19 00:40:29.792562:Command 'select * from cust;' completed with is_change = False.
+DataBase:2022-11-19 00:40:44.380240:Cursor for command is OK.
+DataBase:2022-11-19 00:40:44.382235:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-19 00:40:47.419102:Cursor for command is OK.
+DataBase:2022-11-19 00:40:47.421099:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust3';' completed with is_change = False.
+DataBase:2022-11-19 00:40:47.421099:Cursor for command is OK.
+DataBase:2022-11-19 00:40:47.422094:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust3";' completed with is_change = False.
+DataBase:2022-11-19 00:40:47.989138:Cursor for command is OK.
+DataBase:2022-11-19 00:40:47.991131:Command 'select * from cust3;' completed with is_change = False.
+DataBase:2022-11-19 00:40:50.605036:Cursor for command is OK.
+DataBase:2022-11-19 00:40:50.607030:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-19 00:40:52.290553:Cursor for command is OK.
+DataBase:2022-11-19 00:40:52.292548:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust6';' completed with is_change = False.
+DataBase:2022-11-19 00:40:52.292548:Cursor for command is OK.
+DataBase:2022-11-19 00:40:52.293546:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust6";' completed with is_change = False.
+DataBase:2022-11-19 00:40:52.831785:Cursor for command is OK.
+DataBase:2022-11-19 00:40:52.834776:Command 'select * from cust6;' completed with is_change = False.
+DataBase:2022-11-19 00:40:56.265832:Cursor for command is OK.
+DataBase:2022-11-19 00:40:56.267827:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-19 00:40:59.042525:Cursor for command is OK.
+DataBase:2022-11-19 00:40:59.044516:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust11';' completed with is_change = False.
+DataBase:2022-11-19 00:40:59.044516:Cursor for command is OK.
+DataBase:2022-11-19 00:40:59.046511:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust11";' completed with is_change = False.
+DataBase:2022-11-19 00:40:59.596596:Cursor for command is OK.
+DataBase:2022-11-19 00:40:59.599587:Command 'select * from cust11;' completed with is_change = False.
+DataBase:2022-11-19 00:41:02.973210:Cursor for command is OK.
+DataBase:2022-11-19 00:41:02.974206:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-19 00:41:42.754424:Cursor for command is OK.
+DataBase:2022-11-19 00:41:42.756420:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust';' completed with is_change = False.
+DataBase:2022-11-19 00:41:42.756420:Cursor for command is OK.
+DataBase:2022-11-19 00:41:42.757416:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust";' completed with is_change = False.
+DataBase:2022-11-19 00:41:43.315410:Cursor for command is OK.
+DataBase:2022-11-19 00:41:43.315410:Command 'select * from cust;' completed with is_change = False.
+
+
+DataBase:2022-11-23 23:39:16.222873:Program Start Here
+DataBase:2022-11-23 23:39:16.247807:Connection is OK.
+DataBase:2022-11-23 23:39:16.247807:Complite login for user root at host localhost.
+DataBase:2022-11-23 23:39:16.695194:Cursor for command is OK.
+DataBase:2022-11-23 23:39:16.698186:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-23 23:39:18.253998:Cursor for command is OK.
+DataBase:2022-11-23 23:39:18.255992:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust22';' completed with is_change = False.
+DataBase:2022-11-23 23:39:18.256990:Cursor for command is OK.
+DataBase:2022-11-23 23:39:18.257987:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust22";' completed with is_change = False.
+DataBase:2022-11-23 23:39:18.743878:Cursor for command is OK.
+DataBase:2022-11-23 23:39:18.743878:Command 'select * from cust22;' completed with is_change = False.
+DataBase:2022-11-23 23:39:25.342437:Cursor for command is OK.
+DataBase:2022-11-23 23:39:25.350415:Command 'drop table cust22;' completed with is_change = True.
+DataBase:2022-11-23 23:39:25.350415:Cursor for command is OK.
+DataBase:2022-11-23 23:39:25.361474:Command 'create table cust22(name text , age int );' completed with is_change = True.
+DataBase:2022-11-23 23:39:25.361474:Cursor for command is OK.
+DataBase:2022-11-23 23:39:25.364458:Command 'insert into cust22(name, age) values("das", 23);' completed with is_change = True.
+DataBase:2022-11-23 23:39:25.364458:Cursor for command is OK.
+DataBase:2022-11-23 23:39:25.365454:Command 'insert into cust22(name, age) values("sad", 32);' completed with is_change = True.
+DataBase:2022-11-23 23:39:25.365454:Cursor for command is OK.
+DataBase:2022-11-23 23:39:25.367449:Command 'insert into cust22(name, age) values("aa", 222);' completed with is_change = True.
+DataBase:2022-11-23 23:39:25.367449:Cursor for command is OK.
+DataBase:2022-11-23 23:39:25.368446:Command 'insert into cust22(name, age) values("aa", 222);' completed with is_change = True.
+DataBase:2022-11-23 23:39:25.368446:Cursor for command is OK.
+DataBase:2022-11-23 23:39:25.369445:Command 'insert into cust22(name, age) values("ss", 123);' completed with is_change = True.
+DataBase:2022-11-23 23:39:25.369445:Cursor for command is OK.
+DataBase:2022-11-23 23:39:25.370445:Command 'insert into cust22(name, age) values("dda", 321);' completed with is_change = True.
+DataBase:2022-11-23 23:39:25.370445:Cursor for command is OK.
+DataBase:2022-11-23 23:39:25.371440:Command 'insert into cust22(name, age) values("dsa", 5115);' completed with is_change = True.
+DataBase:2022-11-23 23:39:25.371440:Cursor for command is OK.
+DataBase:2022-11-23 23:39:25.372437:Command 'insert into cust22(name, age) values("‚‚Ù‚ÙÙ", 5122);' completed with is_change = True.
+DataBase:2022-11-23 23:39:29.468733:Cursor for command is OK.
+DataBase:2022-11-23 23:39:29.469732:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-23 23:39:40.509785:Cursor for command is OK.
+DataBase:2022-11-23 23:39:40.511779:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust22';' completed with is_change = False.
+DataBase:2022-11-23 23:39:40.511779:Cursor for command is OK.
+DataBase:2022-11-23 23:39:40.512776:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust22";' completed with is_change = False.
+DataBase:2022-11-23 23:39:40.974293:Cursor for command is OK.
+DataBase:2022-11-23 23:39:40.974293:Command 'select * from cust22;' completed with is_change = False.
+DataBase:2022-11-23 23:39:50.047660:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.054642:Command 'drop table cust22;' completed with is_change = True.
+DataBase:2022-11-23 23:39:50.054642:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.095532:Command 'create table cust22(name text , age int );' completed with is_change = True.
+DataBase:2022-11-23 23:39:50.095532:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.101517:Command 'insert into cust22(name, age) values("das", 23);' completed with is_change = True.
+DataBase:2022-11-23 23:39:50.102516:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.107501:Command 'insert into cust22(name, age) values("sad", 32);' completed with is_change = True.
+DataBase:2022-11-23 23:39:50.107501:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.112488:Command 'insert into cust22(name, age) values("aa", 222);' completed with is_change = True.
+DataBase:2022-11-23 23:39:50.112488:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.118470:Command 'insert into cust22(name, age) values("aa", 222);' completed with is_change = True.
+DataBase:2022-11-23 23:39:50.118470:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.123458:Command 'insert into cust22(name, age) values("ss", 123);' completed with is_change = True.
+DataBase:2022-11-23 23:39:50.123458:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.129441:Command 'insert into cust22(name, age) values("dda", 321);' completed with is_change = True.
+DataBase:2022-11-23 23:39:50.129441:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.134428:Command 'insert into cust22(name, age) values("dsa", 5115);' completed with is_change = True.
+DataBase:2022-11-23 23:39:50.135425:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.140416:Command 'insert into cust22(name, age) values("‚‚Ù‚ÙÙ", 5122);' completed with is_change = True.
+DataBase:2022-11-23 23:39:50.140416:Cursor for command is OK.
+DataBase:2022-11-23 23:39:50.145398:Command 'insert into cust22(name, age) values("‚Ù˚Ù‚˚", 51225);' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.735609:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.741593:Command 'drop table cust22;' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.742590:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.754558:Command 'create table cust22(name text , age int );' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.754558:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.756553:Command 'insert into cust22(name, age) values("das", 23);' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.756553:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.758548:Command 'insert into cust22(name, age) values("sad", 32);' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.758548:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.759545:Command 'insert into cust22(name, age) values("aa", 222);' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.759545:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.760542:Command 'insert into cust22(name, age) values("aa", 222);' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.761540:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.762537:Command 'insert into cust22(name, age) values("ss", 123);' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.762537:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.763535:Command 'insert into cust22(name, age) values("dda", 321);' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.763535:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.765531:Command 'insert into cust22(name, age) values("dsa", 5115);' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.765531:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.767524:Command 'insert into cust22(name, age) values("‚‚Ù‚ÙÙ", 5122);' completed with is_change = True.
+DataBase:2022-11-23 23:42:01.767524:Cursor for command is OK.
+DataBase:2022-11-23 23:42:01.768521:Command 'insert into cust22(name, age) values("‚Ù˚Ù‚˚", 51225);' completed with is_change = True.
+DataBase:2022-11-23 23:42:03.651630:Cursor for command is OK.
+DataBase:2022-11-23 23:42:03.652626:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-11-23 23:42:22.006360:Cursor for command is OK.
+DataBase:2022-11-23 23:42:22.008355:Command 'insert into cust values("assd");' completed with is_change = True.
+DataBase:2022-11-23 23:42:23.695781:Cursor for command is OK.
+DataBase:2022-11-23 23:42:23.696779:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
