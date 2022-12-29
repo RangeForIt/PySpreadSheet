@@ -6,3 +6,15 @@ class QueryError(Exception):
     
     def __hash__(self):
         return self.text
+    
+class TableCreateError(Exception):
+    def __init__(self):
+        pass
+    
+class CellValueError(Exception):
+    def __init__(self):
+        pass
+
+class LoginError(Exception):
+    def __init__(self):
+        pass

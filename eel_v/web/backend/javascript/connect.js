@@ -1,7 +1,7 @@
 function give_data(){
 
-    window.location.href = 'http://localhost:8000/html/table_chose.html'
     eel.take_data([document.getElementById('host').value, document.getElementById('user').value, document.getElementById('password').value, document.getElementById('database').value], document.getElementById('remember').value)
+    window.location.href = 'http://localhost:8000/html/table_chose.html'
 
 }
 
@@ -18,3 +18,6 @@ function set_data(data){
     document.getElementById('remember').checked = true
 
 }
+
+eel.expose(alert_c)
+function alert_c(text){alert(text)}

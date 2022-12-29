@@ -27,3 +27,17 @@ function load_tables_inst(result){
     }
 
 }
+
+eel.expose(show_error)
+
+function show_error(){
+
+    let table = document.querySelector('table')
+    let tag = document.createElement('h2')
+    tag.textContent = "Ошибка при загрузке таблицы!"
+    table.appendChild(tag)
+
+}
+
+eel.expose(go_to_connect)
+function go_to_connect(){window.location.href = 'http://localhost:8000/html/connect.html'}

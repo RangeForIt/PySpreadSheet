@@ -8,10 +8,14 @@ class Handler():#класс хендлера таблиц
         self.table = table
         self.cols_data = self.db.make_command(f"SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{self.table}';", False)
         self.col_types = self.db.make_command(f'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "{self.table}";', False)
+        self.have_ref = False
+        
+        is_it = self.db.make_command(f'SELECT TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME, REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_NAME = "{self.table}";', False)
+        if is_it:
+            print(is_it)
+            self.have_ref = True
     
     def save(self, data):#метод сохранения
-        print(data)
-        
         self.data = data
         is_foreign = False
         foreigns = []
@@ -140,11 +144,11 @@ class Handler():#класс хендлера таблиц
         self.test_for_error(self.db.make_command(f"drop table {self.table};", True))
 
         if self.test_for_error(self.db.make_command(ct_query, True)):
-            raise QueryError(ct_query)
+            raise TableCreateError()
         
         for el in iv_querys:
             if self.test_for_error(self.db.make_command(el, True)) == 1:
-                raise QueryError(el)
+                raise CellValueError()
             
             else:
                 pass
@@ -153,10 +157,10 @@ class Handler():#класс хендлера таблиц
     
     def test_for_error(self, exp):#проверка на ошибку
         if DatabaseError in type(exp).__bases__:
-            raise QueryError(exp)
+            return True
     
         else:
-            return 0 
+            return False
     
     def create_foreign(self, data):#создание части с фореигн кей(сложна очень(нет(наверное)))
         result_tmp = 'foreign key ('
@@ -203,6 +207,7 @@ class Handler():#класс хендлера таблиц
                 result += ')'
         
         return result
+        
     
     def get(self):
         return self.db.make_command(f'select * from {self.table};', False)

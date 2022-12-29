@@ -10,7 +10,7 @@ class GUI(Scheme):
     #инициализация
     def __init__(self, db):
         #главное
-        super().__init__('Chose', with_menu=True)
+        super().__init__('Chose', with_menu=True, with_scroll=True)
         self.db = db
 
         #дополнительное
@@ -34,17 +34,20 @@ class GUI(Scheme):
     def primary(self):
         cols = self.db.make_command(f'show tables from {self.db.db};', False)
         if type(cols) == int:#проверка на тип конекшна
-            Label(self.root_w, text='Неверные пользовательские данные!').grid(column=0, row=3)
+            Label(self.root_f, text='Неверные пользовательские данные!').grid(column=0, row=3)
             return 1
         
         for g in range(len(cols)):#создание и позиционирование кнопок
             row = []
-            row.append(Button(self.root_w, text=cols[g][0], command=partial(self.go_to_edit, cols[g][0]), width=35))
+            row.append(Button(self.root_f, text=cols[g][0], command=partial(self.go_to_edit, cols[g][0]), width=35))
             self.widgets.append(row[-1])
             row[-1].grid(row=g+2, column=0)
             
             self.cols.append(cols[g][0])
             self.list_of_cols.append(row)
+        
+        self.cnv.update()
+        self.__for_bind__()
     
     def go_to_edit(self, col):#открытие окна редактирования
         g(self.db, col)
@@ -65,10 +68,10 @@ class GUI(Scheme):
     def show_ex(self):#создание и позиционирование выполнителя команд
         if not self.stop:
 
-            self.command = Entry(self.root_w, width=35)
-            self.accept = Button(self.root_w, text='Выполнить', command=self.execute)
-            self.tables_mark = Label(self.root_w, text='Таблицы')
-            self.update_b = Button(self.root_w, text="Обновить", command=self.update)
+            self.command = Entry(self.root_f, width=35)
+            self.accept = Button(self.root_f, text='Выполнить', command=self.execute)
+            self.tables_mark = Label(self.root_f, text='Таблицы')
+            self.update_b = Button(self.root_f, text="Обновить", command=self.update)
 
             self.command.grid(column=0, row=0)
             self.accept.grid(column=1, row=0)

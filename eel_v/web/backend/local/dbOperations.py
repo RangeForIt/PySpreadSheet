@@ -1,13 +1,13 @@
 import mysql.connector
 from mysql.connector import Error
 
+from web.backend.local.error import *
 from web.backend.local.logger import Logger
 
 class DataBase():#класс базы данных
 
     def __init__(self, host, user, password, database):
         self.logger = Logger('DataBase', 'web/backend/logs/logs.log')
-
         self.host_name = host
         self.user_name = user
         self.user_password = password
@@ -16,7 +16,7 @@ class DataBase():#класс базы данных
 
         if type(self.connection) == int:
             self.logger.log(f'Fail login for user {self.user_name} at host {self.host_name}.')
-            return 1
+            raise LoginError()
         else:
             self.logger.log(f'Complite login for user {self.user_name} at host {self.host_name}.')
 
@@ -38,11 +38,13 @@ class DataBase():#класс базы данных
 
     def make_command(self, command, is_change):#метод для выполнения команл скюл
         try:
-            self.cursor = self.connection.cursor()
+            self.cursor = self.connection.cursor(buffered=True)
             self.logger.log('Cursor for command is OK.')
             
             if is_change:#если второй аргумент тру, то команда должна что-то добавлять\изменять\удалять, а если фолз, то возвращать штуки
                 self.cursor.execute(command)
+                self.cursor.close()
+                self.cursor = self.connection.cursor(buffered=True)
                 self.connection.commit()
                 self.logger.log(f"Command '{command}' completed with is_change = True.")
                 return 0
@@ -50,6 +52,8 @@ class DataBase():#класс базы данных
             else:
                 self.cursor.execute(command)
                 res = self.cursor.fetchall()
+                self.cursor.close()
+                self.cursor = self.connection.cursor(buffered=True)
                 self.logger.log(f"Command '{command}' completed with is_change = False.")
                 return res
             
@@ -60,6 +64,5 @@ class DataBase():#класс базы данных
         except Error as e:
             self.logger.log(f'Command complete is corruped.Error:\n{e}')
             return e
-
-        finally:
-            self.cursor.close()
+            
+        

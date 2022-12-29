@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <link type="text/css" src="../frontend/table_create.css">
+        <script type="text/javascript" src="../eel.js"></script>
+        <script type="text/javascript" src="../backend/javascript/table_create.js"></script>
+        <title>Table Create</title>
+        
+    </head>
+    <body>
+        <h2>Table Create</h1>
+
+        <table>
+
+            <tr>
+                <td colspan="3">
+                    <input id = "name" value="Название" size="49" style="padding:0;margin:0;">
+                </td>
+            </tr>
+            <tr>
+                <td width="33%" align="center">
+                    <button id = "create_col" onclick="add_column()">Создать Колонку</button>
+                </td>
+                <td width="33%" align="center">
+                    <button id = "delete_col" onclick="delete_column()" >Удалить Колонку</button>
+                </td>
+                <td width="33%" align="center">
+                    <button id = "done" onclick="done()">Завершить</button>
+                </td>
+            </tr>
+
+        </table>
+        <table id = "main">
+
+            
+
+        </table>
+
+    </body>
+
+</html>

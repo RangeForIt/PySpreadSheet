@@ -280,3 +280,693 @@ DataBase:2022-11-23 23:42:22.006360:Cursor for command is OK.
 DataBase:2022-11-23 23:42:22.008355:Command 'insert into cust values("assd");' completed with is_change = True.
 DataBase:2022-11-23 23:42:23.695781:Cursor for command is OK.
 DataBase:2022-11-23 23:42:23.696779:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-01 20:30:55.942565:Program Start Here
+DataBase:2022-12-01 20:30:56.162975:Connection is OK.
+DataBase:2022-12-01 20:30:56.162975:Complite login for user root at host localhost.
+DataBase:2022-12-01 20:30:56.626626:Cursor for command is OK.
+DataBase:2022-12-01 20:30:56.696439:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-01 20:31:26.396017:Cursor for command is OK.
+DataBase:2022-12-01 20:31:26.418956:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust';' completed with is_change = False.
+DataBase:2022-12-01 20:31:26.419956:Cursor for command is OK.
+DataBase:2022-12-01 20:31:26.420951:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust";' completed with is_change = False.
+DataBase:2022-12-01 20:31:26.885612:Cursor for command is OK.
+DataBase:2022-12-01 20:31:26.891775:Command 'select * from cust;' completed with is_change = False.
+DataBase:2022-12-01 20:31:26.892772:Cursor for command is OK.
+DataBase:2022-12-01 20:31:26.913716:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "cust";' completed with is_change = False.
+DataBase:2022-12-01 20:31:31.293265:Cursor for command is OK.
+DataBase:2022-12-01 20:31:31.433888:Command 'drop table cust;' completed with is_change = True.
+DataBase:2022-12-01 20:31:31.433888:Cursor for command is OK.
+DataBase:2022-12-01 20:31:31.466803:Command 'create table cust(name text );' completed with is_change = True.
+DataBase:2022-12-01 20:31:31.466803:Cursor for command is OK.
+DataBase:2022-12-01 20:31:31.472784:Command 'insert into cust(name) values("asd");' completed with is_change = True.
+DataBase:2022-12-01 20:31:31.472784:Cursor for command is OK.
+DataBase:2022-12-01 20:31:31.474780:Command 'insert into cust(name) values("dsa");' completed with is_change = True.
+DataBase:2022-12-01 20:31:31.474780:Cursor for command is OK.
+DataBase:2022-12-01 20:31:31.476774:Command 'insert into cust(name) values("aa");' completed with is_change = True.
+DataBase:2022-12-01 20:31:31.476774:Cursor for command is OK.
+DataBase:2022-12-01 20:31:31.477772:Command 'insert into cust(name) values("assd");' completed with is_change = True.
+DataBase:2022-12-01 20:31:31.477772:Cursor for command is OK.
+DataBase:2022-12-01 20:31:31.479766:Command 'insert into cust(name) values("aaaa");' completed with is_change = True.
+DataBase:2022-12-01 20:31:31.479766:Cursor for command is OK.
+DataBase:2022-12-01 20:31:31.481760:Command 'insert into cust(name) values("sad");' completed with is_change = True.
+DataBase:2022-12-01 20:31:31.481760:Cursor for command is OK.
+DataBase:2022-12-01 20:31:31.483756:Command 'insert into cust(name) values("sdsadsad");' completed with is_change = True.
+DataBase:2022-12-01 20:31:31.483756:Cursor for command is OK.
+DataBase:2022-12-01 20:31:31.485751:Command 'insert into cust(name) values("dsadsadsad");' completed with is_change = True.
+DataBase:2022-12-01 20:31:41.953945:Cursor for command is OK.
+DataBase:2022-12-01 20:31:41.956945:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-01 20:31:43.828205:Cursor for command is OK.
+DataBase:2022-12-01 20:31:43.830197:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust3';' completed with is_change = False.
+DataBase:2022-12-01 20:31:43.830197:Cursor for command is OK.
+DataBase:2022-12-01 20:31:43.831196:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust3";' completed with is_change = False.
+DataBase:2022-12-01 20:31:44.322680:Cursor for command is OK.
+DataBase:2022-12-01 20:31:44.325673:Command 'select * from cust3;' completed with is_change = False.
+DataBase:2022-12-01 20:31:44.325673:Cursor for command is OK.
+DataBase:2022-12-01 20:31:44.328665:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "cust3";' completed with is_change = False.
+DataBase:2022-12-01 20:31:53.550176:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.568130:Command 'drop table cust3;' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.568130:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.581093:Command 'create table cust3(name varchar(30) , age int , is_married tinyint );' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.582093:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.585083:Command 'insert into cust3(name, age, is_married) values("El Bobo", 3, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.585083:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.587078:Command 'insert into cust3(name, age, is_married) values("Samo", 1, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.588075:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.589072:Command 'insert into cust3(name, age, is_married) values("Bena", 2, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.589072:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.591067:Command 'insert into cust3(name, age, is_married) values("Abooba", 1111, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.591067:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.592064:Command 'insert into cust3(name, age, is_married) values("Gleck", 2222, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.592064:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.594059:Command 'insert into cust3(name, age, is_married) values("abobus", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.594059:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.596054:Command 'insert into cust3(name, age, is_married) values("bibobus", 321, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.596054:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.598047:Command 'insert into cust3(name, age, is_married) values("aaa", 132, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.598047:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.600043:Command 'insert into cust3(name, age, is_married) values("wda", 231, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.600043:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.602037:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.602037:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.604034:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.604034:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.605031:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.605031:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.606027:Command 'insert into cust3(name, age, is_married) values("awd", 32, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.606027:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.608022:Command 'insert into cust3(name, age, is_married) values("wada", 3145, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.608022:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.609022:Command 'insert into cust3(name, age, is_married) values("asdaw", 43214, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.610017:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.612011:Command 'insert into cust3(name, age, is_married) values("sadwd", 234, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.612011:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.614005:Command 'insert into cust3(name, age, is_married) values("awdsa", 2344, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.614005:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.616000:Command 'insert into cust3(name, age, is_married) values("dsa", 213, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:31:53.616000:Cursor for command is OK.
+DataBase:2022-12-01 20:31:53.617995:Command 'insert into cust3(name, age, is_married) values("awdwad", 321313, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:36:17.822143:Cursor for command is OK.
+DataBase:2022-12-01 20:36:17.823141:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-01 20:36:23.813570:Cursor for command is OK.
+DataBase:2022-12-01 20:36:23.815563:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'food2';' completed with is_change = False.
+DataBase:2022-12-01 20:36:23.815563:Cursor for command is OK.
+DataBase:2022-12-01 20:36:23.816561:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "food2";' completed with is_change = False.
+DataBase:2022-12-01 20:36:24.406984:Cursor for command is OK.
+DataBase:2022-12-01 20:36:24.407591:Command 'select * from food2;' completed with is_change = False.
+DataBase:2022-12-01 20:36:24.407591:Cursor for command is OK.
+DataBase:2022-12-01 20:36:24.426538:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "food2";' completed with is_change = False.
+DataBase:2022-12-01 20:36:26.621157:Cursor for command is OK.
+DataBase:2022-12-01 20:36:26.623152:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'food';' completed with is_change = False.
+DataBase:2022-12-01 20:36:26.623152:Cursor for command is OK.
+DataBase:2022-12-01 20:36:26.624151:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "food";' completed with is_change = False.
+DataBase:2022-12-01 20:36:27.201276:Cursor for command is OK.
+DataBase:2022-12-01 20:36:27.202273:Command 'select * from food;' completed with is_change = False.
+DataBase:2022-12-01 20:36:27.202273:Cursor for command is OK.
+DataBase:2022-12-01 20:36:27.204267:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "food";' completed with is_change = False.
+DataBase:2022-12-01 20:36:31.166645:Cursor for command is OK.
+DataBase:2022-12-01 20:36:31.168640:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-01 20:36:32.381088:Cursor for command is OK.
+DataBase:2022-12-01 20:36:32.383085:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'food2';' completed with is_change = False.
+DataBase:2022-12-01 20:36:32.383085:Cursor for command is OK.
+DataBase:2022-12-01 20:36:32.385079:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "food2";' completed with is_change = False.
+DataBase:2022-12-01 20:36:32.952162:Cursor for command is OK.
+DataBase:2022-12-01 20:36:32.952162:Command 'select * from food2;' completed with is_change = False.
+DataBase:2022-12-01 20:36:32.952162:Cursor for command is OK.
+DataBase:2022-12-01 20:36:32.961139:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "food2";' completed with is_change = False.
+DataBase:2022-12-01 20:36:37.988792:Cursor for command is OK.
+DataBase:2022-12-01 20:36:37.990786:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'food';' completed with is_change = False.
+DataBase:2022-12-01 20:36:37.990786:Cursor for command is OK.
+DataBase:2022-12-01 20:36:37.991783:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "food";' completed with is_change = False.
+DataBase:2022-12-01 20:36:38.552898:Cursor for command is OK.
+DataBase:2022-12-01 20:36:38.552898:Command 'select * from food;' completed with is_change = False.
+DataBase:2022-12-01 20:36:38.552898:Cursor for command is OK.
+DataBase:2022-12-01 20:36:38.555889:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "food";' completed with is_change = False.
+DataBase:2022-12-01 20:36:54.723319:Cursor for command is OK.
+DataBase:2022-12-01 20:36:54.725315:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-01 20:42:48.437492:Cursor for command is OK.
+DataBase:2022-12-01 20:42:48.440485:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust3';' completed with is_change = False.
+DataBase:2022-12-01 20:42:48.440485:Cursor for command is OK.
+DataBase:2022-12-01 20:42:48.441481:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust3";' completed with is_change = False.
+DataBase:2022-12-01 20:42:49.318642:Cursor for command is OK.
+DataBase:2022-12-01 20:42:49.318642:Command 'select * from cust3;' completed with is_change = False.
+DataBase:2022-12-01 20:42:49.319639:Cursor for command is OK.
+DataBase:2022-12-01 20:42:49.321634:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "cust3";' completed with is_change = False.
+DataBase:2022-12-01 20:45:19.674417:Cursor for command is OK.
+DataBase:2022-12-01 20:45:19.675415:Command 'select * from cust3;' completed with is_change = False.
+DataBase:2022-12-01 20:45:19.675415:Cursor for command is OK.
+DataBase:2022-12-01 20:45:19.677412:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "cust3";' completed with is_change = False.
+DataBase:2022-12-01 20:45:32.182367:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.193338:Command 'drop table cust3;' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.193338:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.205812:Command 'create table cust3(name varchar(30) , age int , is_married tinyint );' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.205812:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.209802:Command 'insert into cust3(name, age, is_married) values("El Bobo", 3, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.209802:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.211796:Command 'insert into cust3(name, age, is_married) values("Samo", 1, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.211796:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.212794:Command 'insert into cust3(name, age, is_married) values("Bena", 2, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.212794:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.213792:Command 'insert into cust3(name, age, is_married) values("Abooba", 1111, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.213792:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.216783:Command 'insert into cust3(name, age, is_married) values("Gleck", 2222, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.216783:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.218779:Command 'insert into cust3(name, age, is_married) values("abobus", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.218779:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.220773:Command 'insert into cust3(name, age, is_married) values("bibobus", 321, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.220773:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.222768:Command 'insert into cust3(name, age, is_married) values("aaa", 132, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.222768:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.223765:Command 'insert into cust3(name, age, is_married) values("wda", 231, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.223765:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.224761:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.224761:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.226758:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.226758:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.227754:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.228752:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.229750:Command 'insert into cust3(name, age, is_married) values("awd", 32, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.229750:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.231744:Command 'insert into cust3(name, age, is_married) values("wada", 3145, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.231744:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.234736:Command 'insert into cust3(name, age, is_married) values("asdaw", 43214, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.234736:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.236732:Command 'insert into cust3(name, age, is_married) values("sadwd", 234, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.236732:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.238724:Command 'insert into cust3(name, age, is_married) values("awdsa", 2344, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.238724:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.240720:Command 'insert into cust3(name, age, is_married) values("dsa", 213, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.240720:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.241717:Command 'insert into cust3(name, age, is_married) values("awdwad", 321313, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:32.241717:Cursor for command is OK.
+DataBase:2022-12-01 20:45:32.243711:Command 'insert into cust3(name, age, is_married) values("sad", 213123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.454155:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.461143:Command 'drop table cust3;' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.461143:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.477094:Command 'create table cust3(name varchar(30) , age int , is_married tinyint );' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.477094:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.481083:Command 'insert into cust3(name, age, is_married) values("El Bobo", 3, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.481083:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.484075:Command 'insert into cust3(name, age, is_married) values("Samo", 1, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.484075:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.486070:Command 'insert into cust3(name, age, is_married) values("Bena", 2, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.486070:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.488064:Command 'insert into cust3(name, age, is_married) values("Abooba", 1111, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.488064:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.489062:Command 'insert into cust3(name, age, is_married) values("Gleck", 2222, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.489062:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.490059:Command 'insert into cust3(name, age, is_married) values("abobus", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.490059:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.491057:Command 'insert into cust3(name, age, is_married) values("bibobus", 321, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.491057:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.492053:Command 'insert into cust3(name, age, is_married) values("aaa", 132, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.492053:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.494048:Command 'insert into cust3(name, age, is_married) values("wda", 231, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.494048:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.495046:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.496044:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.497040:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.497040:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.498039:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.499035:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.500032:Command 'insert into cust3(name, age, is_married) values("awd", 32, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.501030:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.502028:Command 'insert into cust3(name, age, is_married) values("wada", 3145, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.502028:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.504022:Command 'insert into cust3(name, age, is_married) values("asdaw", 43214, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.505021:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.506016:Command 'insert into cust3(name, age, is_married) values("sadwd", 234, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.506016:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.507014:Command 'insert into cust3(name, age, is_married) values("awdsa", 2344, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.507014:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.509008:Command 'insert into cust3(name, age, is_married) values("dsa", 213, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.509008:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.510005:Command 'insert into cust3(name, age, is_married) values("awdwad", 321313, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:38.510005:Cursor for command is OK.
+DataBase:2022-12-01 20:45:38.512001:Command complete is corruped.Error:
+1264 (22003): Out of range value for column 'is_married' at row 1
+DataBase:2022-12-01 20:45:42.187532:Cursor for command is OK.
+DataBase:2022-12-01 20:45:42.187532:Command 'select * from cust3;' completed with is_change = False.
+DataBase:2022-12-01 20:45:42.187532:Cursor for command is OK.
+DataBase:2022-12-01 20:45:42.189528:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "cust3";' completed with is_change = False.
+DataBase:2022-12-01 20:45:49.430714:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.440690:Command 'drop table cust3;' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.440690:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.456815:Command 'create table cust3(name varchar(30) , age int , is_married tinyint );' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.456815:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.459639:Command 'insert into cust3(name, age, is_married) values("El Bobo", 3, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.459639:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.461148:Command 'insert into cust3(name, age, is_married) values("Samo", 1, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.461148:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.463138:Command 'insert into cust3(name, age, is_married) values("Bena", 2, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.463138:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.464136:Command 'insert into cust3(name, age, is_married) values("Abooba", 1111, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.464136:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.466131:Command 'insert into cust3(name, age, is_married) values("Gleck", 2222, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.466131:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.467128:Command 'insert into cust3(name, age, is_married) values("abobus", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.467128:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.469122:Command 'insert into cust3(name, age, is_married) values("bibobus", 321, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.469122:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.471118:Command 'insert into cust3(name, age, is_married) values("aaa", 132, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.471118:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.472113:Command 'insert into cust3(name, age, is_married) values("wda", 231, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.472113:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.474109:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.474109:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.475107:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.475107:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.476103:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.477101:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.478098:Command 'insert into cust3(name, age, is_married) values("awd", 32, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.478098:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.479095:Command 'insert into cust3(name, age, is_married) values("wada", 3145, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.479095:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.480093:Command 'insert into cust3(name, age, is_married) values("asdaw", 43214, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.480093:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.481090:Command 'insert into cust3(name, age, is_married) values("sadwd", 234, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.481090:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.483085:Command 'insert into cust3(name, age, is_married) values("awdsa", 2344, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.483085:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.485080:Command 'insert into cust3(name, age, is_married) values("dsa", 213, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.485080:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.488072:Command 'insert into cust3(name, age, is_married) values("awdwad", 321313, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:49.488072:Cursor for command is OK.
+DataBase:2022-12-01 20:45:49.488072:Command complete is corruped.Error:
+1264 (22003): Out of range value for column 'age' at row 1
+DataBase:2022-12-01 20:45:57.854420:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.862400:Command 'drop table cust3;' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.862400:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.874368:Command 'create table cust3(name varchar(30) , age int , is_married tinyint );' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.874368:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.877360:Command 'insert into cust3(name, age, is_married) values("El Bobo", 3, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.877360:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.878358:Command 'insert into cust3(name, age, is_married) values("Samo", 1, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.878358:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.880353:Command 'insert into cust3(name, age, is_married) values("Bena", 2, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.880353:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.881351:Command 'insert into cust3(name, age, is_married) values("Abooba", 1111, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.881351:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.882347:Command 'insert into cust3(name, age, is_married) values("Gleck", 2222, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.882347:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.883345:Command 'insert into cust3(name, age, is_married) values("abobus", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.884342:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.885339:Command 'insert into cust3(name, age, is_married) values("bibobus", 321, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.885339:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.887335:Command 'insert into cust3(name, age, is_married) values("aaa", 132, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.887335:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.888332:Command 'insert into cust3(name, age, is_married) values("wda", 231, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.888332:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.890326:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.890326:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.891324:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.892320:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.893318:Command 'insert into cust3(name, age, is_married) values("awd", 123, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.893318:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.894316:Command 'insert into cust3(name, age, is_married) values("awd", 32, 0);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.894316:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.895312:Command 'insert into cust3(name, age, is_married) values("wada", 3145, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.895312:Cursor for command is OK.
+DataBase:2022-12-01 20:45:57.896310:Command 'insert into cust3(name, age, is_married) values("asdaw", 43214, 1);' completed with is_change = True.
+DataBase:2022-12-01 20:45:57.897306:Cursor for command is OK.
+
+
+DataBase:2022-12-01 21:18:59.976723:Program Start Here
+DataBase:2022-12-01 21:18:59.978718:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-01 21:18:59.978718:Fail login for user f0749192_base at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-01 21:19:34.656547:Program Start Here
+DataBase:2022-12-01 21:19:34.657545:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-01 21:19:34.657545:Fail login for user f0749192_base at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-01 21:24:30.569019:Program Start Here
+DataBase:2022-12-01 21:24:30.596962:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-01 21:24:30.596962:Fail login for user f0749192_base at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-01 21:25:42.407376:Program Start Here
+DataBase:2022-12-01 21:25:42.435355:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-01 21:25:42.435355:Fail login for user f0749192_base at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-01 21:26:02.549124:Program Start Here
+DataBase:2022-12-01 21:26:02.608963:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-01 21:26:02.608963:Fail login for user f0749192_base at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-01 21:27:46.168411:Program Start Here
+DataBase:2022-12-01 21:27:46.189355:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-01 21:27:46.189355:Fail login for user f0749192_base at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-01 21:28:11.720301:Program Start Here
+DataBase:2022-12-01 21:28:11.739249:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-01 21:28:11.739249:Fail login for user f0749192_base at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-02 19:18:28.383675:Program Start Here
+DataBase:2022-12-02 19:18:28.434540:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-02 19:18:28.434540:Fail login for user f0749192_base at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-02 19:24:17.630367:Program Start Here
+DataBase:2022-12-02 19:24:17.657296:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-02 19:24:17.657296:Fail login for user f0749192_base at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-02 19:27:04.117762:Program Start Here
+DataBase:2022-12-02 19:27:04.143226:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-02 19:27:04.143226:Fail login for user f0749192_base at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-02 19:27:37.141657:Program Start Here
+DataBase:2022-12-02 19:27:37.141657:Connection is corruped. Error:
+2005 (HY000): Unknown MySQL server host 'http://f0749192.xsph.ru/' (11001)
+DataBase:2022-12-02 19:27:37.141657:Fail login for user f0749192 at host http://f0749192.xsph.ru/.
+
+
+DataBase:2022-12-02 19:27:53.285387:Program Start Here
+DataBase:2022-12-02 19:27:53.745669:Connection is corruped. Error:
+1045 (28000): Access denied for user 'f0749192'@'109-184-144-59.dynamic.mts-nn.ru' (using password: YES)
+DataBase:2022-12-02 19:27:53.745669:Fail login for user f0749192 at host f0749192.xsph.ru.
+
+
+DataBase:2022-12-02 19:32:21.375158:Program Start Here
+DataBase:2022-12-02 19:32:21.618769:Connection is corruped. Error:
+1045 (28000): Access denied for user 'f0749192'@'109-184-144-59.dynamic.mts-nn.ru' (using password: YES)
+DataBase:2022-12-02 19:32:21.618769:Fail login for user f0749192 at host f0749192.xsph.ru.
+
+
+DataBase:2022-12-02 20:32:23.961289:Program Start Here
+DataBase:2022-12-02 20:32:24.076989:Connection is OK.
+DataBase:2022-12-02 20:32:24.076989:Complite login for user root at host localhost.
+
+
+DataBase:2022-12-02 20:33:50.736420:Program Start Here
+DataBase:2022-12-02 20:33:50.750383:Connection is OK.
+DataBase:2022-12-02 20:33:50.750383:Complite login for user root at host localhost.
+
+
+DataBase:2022-12-02 20:38:51.633416:Program Start Here
+DataBase:2022-12-02 20:38:51.663335:Connection is OK.
+DataBase:2022-12-02 20:38:51.663335:Complite login for user root at host localhost.
+DataBase:2022-12-02 20:38:52.178637:Cursor for command is OK.
+DataBase:2022-12-02 20:38:52.183623:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-02 20:39:06.049027:Program Start Here
+DataBase:2022-12-02 20:39:06.056008:Connection is OK.
+DataBase:2022-12-02 20:39:06.056008:Complite login for user root at host localhost.
+DataBase:2022-12-02 20:39:06.509533:Cursor for command is OK.
+DataBase:2022-12-02 20:39:06.518509:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-02 20:39:08.616390:Program Start Here
+DataBase:2022-12-02 20:39:08.622375:Connection is OK.
+DataBase:2022-12-02 20:39:08.622375:Complite login for user root at host localhost.
+DataBase:2022-12-02 20:39:09.086218:Cursor for command is OK.
+DataBase:2022-12-02 20:39:09.092201:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-02 20:39:10.153889:Program Start Here
+DataBase:2022-12-02 20:39:10.158876:Connection is OK.
+DataBase:2022-12-02 20:39:10.158876:Complite login for user root at host localhost.
+DataBase:2022-12-02 20:39:10.608383:Cursor for command is OK.
+DataBase:2022-12-02 20:39:10.614361:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-02 21:00:12.395539:Program Start Here
+
+
+DataBase:2022-12-02 21:00:58.018214:Program Start Here
+DataBase:2022-12-02 21:01:02.109199:Connection is corruped. Error:
+2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+DataBase:2022-12-02 21:01:02.109199:Fail login for user root at host localhost.
+
+
+DataBase:2022-12-02 21:04:12.762505:Program Start Here
+DataBase:2022-12-02 21:04:16.842652:Connection is corruped. Error:
+2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (10061)
+DataBase:2022-12-02 21:04:16.842652:Fail login for user root at host localhost.
+
+
+DataBase:2022-12-19 22:57:09.002062:Program Start Here
+DataBase:2022-12-19 22:57:09.024004:Connection is OK.
+DataBase:2022-12-19 22:57:09.024004:Complite login for user root at host localhost.
+DataBase:2022-12-19 22:57:09.545473:Cursor for command is OK.
+DataBase:2022-12-19 22:57:09.547468:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-19 22:57:34.704368:Cursor for command is OK.
+
+
+DataBase:2022-12-20 14:57:14.795236:Program Start Here
+DataBase:2022-12-20 14:57:14.816177:Connection is OK.
+DataBase:2022-12-20 14:57:14.816177:Complite login for user root at host localhost.
+DataBase:2022-12-20 14:57:15.341303:Cursor for command is OK.
+DataBase:2022-12-20 14:57:15.345292:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-20 14:57:23.386571:Cursor for command is OK.
+DataBase:2022-12-20 14:57:23.386571:Command complete is corruped.Error:
+1054 (42S22): Unknown column 'daw' in 'field list'
+DataBase:2022-12-20 14:57:26.877957:Cursor for command is OK.
+DataBase:2022-12-20 14:57:26.880949:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-20 14:57:33.249238:Cursor for command is OK.
+DataBase:2022-12-20 14:57:33.250235:Command complete is corruped.Error:
+1054 (42S22): Unknown column 'daw' in 'field list'
+DataBase:2022-12-20 14:57:35.347549:Cursor for command is OK.
+DataBase:2022-12-20 14:57:35.349543:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-20 14:57:39.450231:Cursor for command is OK.
+DataBase:2022-12-20 14:57:39.450231:Command 'select name from cust3;' completed with is_change = False.
+DataBase:2022-12-20 14:57:42.986202:Cursor for command is OK.
+DataBase:2022-12-20 14:57:42.988197:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-20 14:58:00.418226:Cursor for command is OK.
+DataBase:2022-12-20 14:58:00.490694:Command 'create table cust30(name text);' completed with is_change = True.
+DataBase:2022-12-20 14:58:01.691635:Cursor for command is OK.
+DataBase:2022-12-20 14:58:01.692633:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-20 14:58:06.034035:Cursor for command is OK.
+DataBase:2022-12-20 14:58:06.048240:Command 'create table cust31(name text);' completed with is_change = True.
+DataBase:2022-12-20 14:58:07.267241:Cursor for command is OK.
+DataBase:2022-12-20 14:58:07.268239:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-20 14:58:10.713266:Cursor for command is OK.
+DataBase:2022-12-20 14:58:10.738375:Command 'create table cust32(name text);' completed with is_change = True.
+DataBase:2022-12-20 14:58:11.795084:Cursor for command is OK.
+DataBase:2022-12-20 14:58:11.796082:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-20 14:58:30.129164:Cursor for command is OK.
+DataBase:2022-12-20 14:58:30.137143:Command 'insert into cust30 values("aaaaasdsad");' completed with is_change = True.
+DataBase:2022-12-20 14:58:31.411139:Cursor for command is OK.
+DataBase:2022-12-20 14:58:31.412136:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-20 14:58:32.874024:Cursor for command is OK.
+DataBase:2022-12-20 14:58:32.880009:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust30';' completed with is_change = False.
+DataBase:2022-12-20 14:58:32.880009:Cursor for command is OK.
+DataBase:2022-12-20 14:58:32.881005:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust30";' completed with is_change = False.
+DataBase:2022-12-20 14:58:33.425313:Cursor for command is OK.
+DataBase:2022-12-20 14:58:33.426311:Command 'select * from cust30;' completed with is_change = False.
+DataBase:2022-12-20 14:58:33.426311:Cursor for command is OK.
+DataBase:2022-12-20 14:58:33.434290:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "cust30";' completed with is_change = False.
+DataBase:2022-12-20 14:58:34.890783:Cursor for command is OK.
+DataBase:2022-12-20 14:58:34.892778:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-20 14:58:36.402241:Cursor for command is OK.
+DataBase:2022-12-20 14:58:36.402241:Command complete is corruped.Error:
+1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'valudsasades("aaaaasdsad")' at line 1
+DataBase:2022-12-20 14:58:38.428200:Cursor for command is OK.
+DataBase:2022-12-20 14:58:38.429193:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-20 14:58:42.897205:Cursor for command is OK.
+DataBase:2022-12-20 14:58:42.900198:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust30';' completed with is_change = False.
+DataBase:2022-12-20 14:58:42.900198:Cursor for command is OK.
+DataBase:2022-12-20 14:58:42.902191:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust30";' completed with is_change = False.
+DataBase:2022-12-20 14:58:43.448107:Cursor for command is OK.
+DataBase:2022-12-20 14:58:43.449104:Command 'select * from cust30;' completed with is_change = False.
+DataBase:2022-12-20 14:58:43.449104:Cursor for command is OK.
+DataBase:2022-12-20 14:58:43.451098:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "cust30";' completed with is_change = False.
+DataBase:2022-12-20 14:58:45.623227:Cursor for command is OK.
+DataBase:2022-12-20 14:58:45.625223:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-20 21:22:10.862704:Program Start Here
+DataBase:2022-12-20 21:22:11.306664:Connection is corruped. Error:
+1045 (28000): Access denied for user 'f0749192'@'109-184-179-234.dynamic.mts-nn.ru' (using password: YES)
+DataBase:2022-12-20 21:22:11.306664:Fail login for user f0749192 at host 141.8.193.236.
+
+
+DataBase:2022-12-20 21:26:01.694254:Program Start Here
+DataBase:2022-12-20 21:26:01.967996:Connection is corruped. Error:
+1045 (28000): Access denied for user 'f0749192'@'109-184-179-234.dynamic.mts-nn.ru' (using password: YES)
+DataBase:2022-12-20 21:26:01.967996:Fail login for user f0749192 at host f0749192.xsph.ru.
+
+
+DataBase:2022-12-20 21:26:09.630490:Program Start Here
+DataBase:2022-12-20 21:26:09.821977:Connection is corruped. Error:
+1045 (28000): Access denied for user 'f0749192'@'109-184-179-234.dynamic.mts-nn.ru' (using password: YES)
+DataBase:2022-12-20 21:26:09.821977:Fail login for user f0749192 at host f0749192.xsph.ru.
+
+
+DataBase:2022-12-20 21:26:17.702023:Program Start Here
+DataBase:2022-12-20 21:26:17.915457:Connection is corruped. Error:
+1045 (28000): Access denied for user 'f0749192'@'109-184-179-234.dynamic.mts-nn.ru' (using password: YES)
+DataBase:2022-12-20 21:26:17.915457:Fail login for user f0749192 at host f0749192.xsph.ru.
+
+
+DataBase:2022-12-20 21:26:26.118145:Program Start Here
+DataBase:2022-12-20 21:26:26.313079:Connection is corruped. Error:
+1045 (28000): Access denied for user 'f0749192'@'109-184-179-234.dynamic.mts-nn.ru' (using password: YES)
+DataBase:2022-12-20 21:26:26.313079:Fail login for user f0749192 at host f0749192.xsph.ru.
+
+
+DataBase:2022-12-20 21:26:30.741907:Program Start Here
+DataBase:2022-12-20 21:26:30.937149:Connection is corruped. Error:
+1045 (28000): Access denied for user 'f0749192'@'109-184-179-234.dynamic.mts-nn.ru' (using password: YES)
+DataBase:2022-12-20 21:26:30.937149:Fail login for user f0749192 at host f0749192.xsph.ru.
+
+
+DataBase:2022-12-21 16:38:41.967168:Program Start Here
+DataBase:2022-12-21 16:38:42.259556:Connection is corruped. Error:
+1045 (28000): Access denied for user 'f0749192_base'@'109-184-179-234.dynamic.mts-nn.ru' (using password: YES)
+DataBase:2022-12-21 16:38:42.259556:Fail login for user f0749192_base at host f0749192.xsph.ru.
+
+
+DataBase:2022-12-22 20:28:21.401259:Program Start Here
+DataBase:2022-12-22 20:28:21.427189:Connection is OK.
+DataBase:2022-12-22 20:28:21.427189:Complite login for user root at host localhost.
+DataBase:2022-12-22 20:28:21.933627:Cursor for command is OK.
+DataBase:2022-12-22 20:28:21.935621:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-22 20:30:46.345116:Program Start Here
+DataBase:2022-12-22 20:30:46.372044:Connection is OK.
+DataBase:2022-12-22 20:30:46.373045:Complite login for user root at host localhost.
+DataBase:2022-12-22 20:30:46.866903:Cursor for command is OK.
+DataBase:2022-12-22 20:30:46.869898:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-22 20:31:09.736457:Program Start Here
+DataBase:2022-12-22 20:31:09.760393:Connection is OK.
+DataBase:2022-12-22 20:31:09.760393:Complite login for user root at host localhost.
+DataBase:2022-12-22 20:31:10.243261:Cursor for command is OK.
+DataBase:2022-12-22 20:31:10.246252:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-22 20:32:23.704538:Program Start Here
+DataBase:2022-12-22 20:32:23.730468:Connection is OK.
+DataBase:2022-12-22 20:32:23.730468:Complite login for user root at host localhost.
+DataBase:2022-12-22 20:32:24.204139:Cursor for command is OK.
+DataBase:2022-12-22 20:32:24.206134:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-24 20:56:17.565891:Program Start Here
+DataBase:2022-12-24 20:56:17.617749:Connection is OK.
+DataBase:2022-12-24 20:56:17.617749:Complite login for user root at host localhost.
+DataBase:2022-12-24 20:56:18.067136:Cursor for command is OK.
+DataBase:2022-12-24 20:56:18.079103:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-25 18:07:45.910485:Program Start Here
+DataBase:2022-12-25 18:07:46.038103:Connection is OK.
+DataBase:2022-12-25 18:07:46.038103:Complite login for user root at host localhost.
+DataBase:2022-12-25 18:07:46.486719:Cursor for command is OK.
+DataBase:2022-12-25 18:07:46.513646:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-25 19:48:12.801991:Program Start Here
+DataBase:2022-12-25 19:48:12.828919:Connection is OK.
+DataBase:2022-12-25 19:48:12.828919:Complite login for user root at host localhost.
+DataBase:2022-12-25 19:48:13.363213:Cursor for command is OK.
+DataBase:2022-12-25 19:48:13.370193:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-25 19:50:45.018518:Program Start Here
+DataBase:2022-12-25 19:50:45.077360:Connection is OK.
+DataBase:2022-12-25 19:50:45.077360:Complite login for user root at host localhost.
+DataBase:2022-12-25 19:50:45.640366:Cursor for command is OK.
+DataBase:2022-12-25 19:50:45.647347:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-25 21:01:49.191034:Program Start Here
+DataBase:2022-12-25 21:01:49.217961:Connection is OK.
+DataBase:2022-12-25 21:01:49.217961:Complite login for user root at host localhost.
+DataBase:2022-12-25 21:01:49.702665:Cursor for command is OK.
+DataBase:2022-12-25 21:01:49.707651:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-25 21:02:00.510371:Cursor for command is OK.
+DataBase:2022-12-25 21:02:00.519347:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'cust22';' completed with is_change = False.
+DataBase:2022-12-25 21:02:00.519347:Cursor for command is OK.
+DataBase:2022-12-25 21:02:00.521341:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "cust22";' completed with is_change = False.
+DataBase:2022-12-25 21:02:00.521341:Cursor for command is OK.
+DataBase:2022-12-25 21:02:00.527326:Command 'SELECT TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME, REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_NAME = "cust22";' completed with is_change = False.
+DataBase:2022-12-25 21:02:01.054915:Cursor for command is OK.
+DataBase:2022-12-25 21:02:01.064888:Command 'select * from cust22;' completed with is_change = False.
+DataBase:2022-12-25 21:02:01.065885:Cursor for command is OK.
+DataBase:2022-12-25 21:02:01.081842:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "cust22";' completed with is_change = False.
+DataBase:2022-12-25 21:02:02.176072:Cursor for command is OK.
+DataBase:2022-12-25 21:02:02.179064:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+
+
+DataBase:2022-12-25 21:02:36.463836:Program Start Here
+DataBase:2022-12-25 21:02:36.474807:Connection is OK.
+DataBase:2022-12-25 21:02:36.474807:Complite login for user root at host localhost.
+DataBase:2022-12-25 21:02:36.953204:Cursor for command is OK.
+DataBase:2022-12-25 21:02:36.959187:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-25 21:03:11.782610:Cursor for command is OK.
+DataBase:2022-12-25 21:03:11.791586:Command 'SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'companys';' completed with is_change = False.
+DataBase:2022-12-25 21:03:11.791586:Cursor for command is OK.
+DataBase:2022-12-25 21:03:11.793580:Command 'SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = "companys";' completed with is_change = False.
+DataBase:2022-12-25 21:03:11.794577:Cursor for command is OK.
+DataBase:2022-12-25 21:03:11.801559:Command 'SELECT TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME, REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_NAME = "companys";' completed with is_change = False.
+DataBase:2022-12-25 21:03:12.297880:Cursor for command is OK.
+DataBase:2022-12-25 21:03:12.338771:Command 'select * from companys;' completed with is_change = False.
+DataBase:2022-12-25 21:03:12.339770:Cursor for command is OK.
+DataBase:2022-12-25 21:03:12.347747:Command 'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "companys";' completed with is_change = False.
+
+
+DataBase:2022-12-27 16:36:34.362303:Program Start Here
+DataBase:2022-12-27 16:36:34.402523:Connection is OK.
+DataBase:2022-12-27 16:36:34.402523:Complite login for user root at host localhost.
+DataBase:2022-12-27 16:36:34.965969:Cursor for command is OK.
+DataBase:2022-12-27 16:36:34.982923:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-27 16:36:44.729159:Cursor for command is OK.
+DataBase:2022-12-27 16:36:44.730156:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-27 16:37:21.272456:Cursor for command is OK.
+DataBase:2022-12-27 16:37:21.438672:Command 'create table cust33(id int  auto_increment primary key, name varchar(30) );' completed with is_change = True.
+
+
+DataBase:2022-12-27 16:39:26.760813:Program Start Here
+DataBase:2022-12-27 16:39:26.801701:Connection is OK.
+DataBase:2022-12-27 16:39:26.801701:Complite login for user root at host localhost.
+DataBase:2022-12-27 16:39:27.329807:Cursor for command is OK.
+DataBase:2022-12-27 16:39:27.342772:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-27 16:40:51.343873:Cursor for command is OK.
+DataBase:2022-12-27 16:40:51.384763:Command complete is corruped.Error:
+1050 (42S01): Table 'cust33' already exists
+
+
+DataBase:2022-12-27 17:17:30.560210:Program Start Here
+DataBase:2022-12-27 17:17:30.595315:Connection is OK.
+DataBase:2022-12-27 17:17:30.595315:Complite login for user root at host localhost.
+DataBase:2022-12-27 17:17:31.136389:Cursor for command is OK.
+DataBase:2022-12-27 17:17:31.143370:Command 'select table_name from information_schema.tables where table_schema = "test";' completed with is_change = False.
+DataBase:2022-12-27 17:18:07.358664:Cursor for command is OK.
+DataBase:2022-12-27 17:18:07.391575:Command 'create table abcdefg(id int  auto_increment primary key, name varchar(30) );' completed with is_change = True.
+
+
+DataBase:2022-12-29 18:46:19.855364:Program Start Here
+DataBase:2022-12-29 18:46:19.885284:Connection is OK.
+DataBase:2022-12-29 18:46:19.885284:Complite login for user root at host localhost.
+
+
+DataBase:2022-12-29 18:55:47.382791:Program Start Here
+DataBase:2022-12-29 18:55:47.416699:Connection is OK.
+DataBase:2022-12-29 18:55:47.416699:Complite login for user root at host localhost.
+
+
+DataBase:2022-12-29 18:55:53.734555:Program Start Here
+DataBase:2022-12-29 18:55:53.739541:Connection is OK.
+DataBase:2022-12-29 18:55:53.740538:Complite login for user root at host localhost.

@@ -132,6 +132,7 @@ class Handler():#класс хендлера таблиц
         table = self.db.make_command(f'select * from {self.table};', False)
         data = self.db.make_command(f'select * from information_schema.columns where table_name = "{self.table}";', False)
         data_add = self.db.make_command(f'SELECT RC.TABLE_NAME, RC.REFERENCED_TABLE_NAME, KCU.COLUMN_NAME, KCU.REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS RC JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE KCU USING(CONSTRAINT_NAME) WHERE RC.TABLE_NAME = "{self.table}";', False)
+        print(data_add)
 
         if not table:
             return 1

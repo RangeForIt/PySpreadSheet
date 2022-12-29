@@ -1,5 +1,6 @@
 from web.backend.table_instance import Instance
 from web.backend.local.dbOperations import DataBase
+from mysql.connector.errors import ProgrammingError
 
 import eel
 
@@ -10,13 +11,18 @@ class Execute:
         self.db = db
     
     def handle(self, command):
-        if command.startswith('select'):#если начинается с селект
+        print(command)
+        if command.lower().startswith('select'):#если начинается с селект
             Instance(self.db, command)
             eel.go_inst()
         
-        elif command.startswith('drop'):#если начинается с дроп
+        elif command.lower().startswith('drop'):#если начинается с дроп
             if eel.ask('Вы собираетесь что-то удалить. Вы уверены?')():
-                self.db.make_command(command, True)
+                res = self.db.make_command(command, True)
+                if type(res) == ProgrammingError:
+                    eel.alrt("Ошибка! Результат - " + str(res))
+                    eel.reload()
+                    return 1
                 eel.reload()
 
             else:
@@ -24,7 +30,11 @@ class Execute:
         
         else:#если команда-ноунейм
             res = self.db.make_command(command, True)
-            eel.alrt(res)
+            if type(res) == ProgrammingError:
+                    eel.alrt("Ошибка! Результат - " + str(res))
+                    eel.reload()
+                    return 1
+            eel.alrt("Успешно! Результат - " + str(res))
             eel.reload()
             
         return 0

@@ -1,5 +1,6 @@
-import eel
 from web.backend.connect import Connect
+
+import eel
 
 eel.init('web')
 

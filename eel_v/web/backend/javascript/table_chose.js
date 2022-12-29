@@ -81,3 +81,10 @@ function go_inst(){
     window.location.href = 'http://localhost:8000/html/table_instance.html'
 
 }
+
+function go_to_create(){
+
+    eel.create_instance_c()
+    window.location.href = 'http://localhost:8000/html/table_create.html'
+
+}
